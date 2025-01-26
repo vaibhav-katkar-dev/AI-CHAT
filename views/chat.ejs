@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="chat.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="body">
+        <h1 style="text-align:center;font-family: Arial, Helvetica, sans-serif; top:1%;text-align: center;position: absolute;">AI-CHAT</h1>
+        <!-- <h5 style="text-align:center;font-family: Arial, Helvetica, sans-serif; left: 6%;top:2%;text-align: left;position: absolute;"></h5> -->
+
+       
+        <i id="mode" class="fa-solid fa-moon"></i>
+
+        <!-- <div class="prompt-div"> -->
+            <div class="genreted-res">
+                <h1 id ="h1" style="text-align:center;font-family: Arial, Helvetica, sans-serif; top:40%;left:20%;position: absolute;">Welcome To <br>AI-CHAT <br><span style="color: rgb(255, 153, 0);">Gemini-ai</span></h1>
+              
+                <!-- <div class="resC">
+                     
+            </div> -->
+            </div>
+            <div class="prompt-div">
+                <input type="text" placeholder="Write A prompt" class="prompt" >
+                
+                <button>
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+           
+            <!-- </div> -->
+        </div>
+    </div>
+    <script>
+        // let modei=document.querySelector('.fa-thin fa-moon');
+        let body=document.querySelector('.body');
+
+       let mode= document.querySelector('#mode');
+       let  flag="WhiteSet";
+       mode.addEventListener('click',()=>{
+           
+
+        if(flag==="WhiteSet"){
+            body.style.backgroundColor="rgb(22,22,22)";
+            // modei.className="fa-solid fa-moon";
+            // flag=0;
+            
+            mode.style.color='white';
+            document.querySelector('h1').style.color="white";
+            flag="blackSet";
+            console.log(flag);
+
+        }
+        else if(flag==="blackSet"){
+            body.style.backgroundColor='white';
+            // modei.className="fa-thin fa-moon";
+            document.querySelector('h1').style.color="black";
+
+            flag="WhiteSet";
+            
+            mode.style.color='black';
+            console.log(flag);
+        }
+            
+           
+        });
+
+    </script>
+
+
+<script src="/socket.io/socket.io.js">
+    
+</script>
+<script>
+const socket=io();
+
+let input=document.querySelector('input');
+let button=document.querySelector('button');
+let resContainer=document.querySelector('.genreted-res')
+let resC=document.querySelector('.resC')
+// document.querySelector('h1');
+let anlizing=document.createElement("p");
+
+button.addEventListener('click',()=>{
+    let prompt=input.value;
+    socket.emit('prompt',prompt);
+    input.value="";
+    document.querySelector('#h1').style.opacity="0";
+    anlizing.textContent="  Analyzing..";
+    anlizing.style="left:10%;position:absulute;margine=10px;font-weight:600; text-align:center;";
+    resContainer.appendChild(anlizing);
+})
+
+
+socket.on('res',(r)=>{
+    console.log(r);
+    let resC=document.createElement('div');
+    let p=document.createElement('aiml');
+    let hr=document.createElement('hr');
+    resC.className="resC";
+    p.innerText=r;
+    p.style.fontFamily="Arial, Helvetica, sans-serif";
+    p.style.fontSize="1rem";
+    p.style.fontWeight="600";
+    resC.style.margin="10px";
+    resContainer.appendChild(resC);
+    resC.appendChild(p);
+    hr.style.border='1px solid rgb(206, 206, 206);';
+    hr.style.margin="10px";
+    resContainer.appendChild(hr);
+    anlizing.style.opacity="0";
+
+
+
+
+
+
+})
+</script>
+</body>
+
+</html>
