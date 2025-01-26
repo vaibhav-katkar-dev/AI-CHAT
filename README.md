@@ -25,11 +25,12 @@ AI Chat is a real-time chat application inspired by ChatGPT. Built using **HTML*
 ## Screenshots
 
 
-    ![](https://github.com/vaibhav-katkar-dev/AI-CHAT/blob/main/public/3.PNG)
-
    ![](https://github.com/vaibhav-katkar-dev/AI-CHAT/blob/main/public/2.PNG)
 
+   ![](https://github.com/vaibhav-katkar-dev/AI-CHAT/blob/main/public/3.PNG)
+
    ![](https://github.com/vaibhav-katkar-dev/AI-CHAT/blob/main/public/1.PNG)
+
 
 
    ![](https://github.com/vaibhav-katkar-dev/AI-CHAT/blob/main/public/4.PNG)
