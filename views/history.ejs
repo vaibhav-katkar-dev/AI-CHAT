@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="/stylesheets/history.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/<%=id.id%>/c" id="back">Back</a>
+
+    <h1>Chat History</h1>
+<%for(d of data.prompts){%>
+
+
+    <div class="ip">   
+
+   <p><span id="input"><%=d.input%></span><br><br><span id="output"><%=d.output%></span></p> 
+</div>
+<%}%>
+</body>
+</html>

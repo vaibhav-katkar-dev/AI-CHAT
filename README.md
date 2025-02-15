@@ -1,15 +1,18 @@
 # AI Chat 🤖💬  
 
-AI Chat is a real-time chat application inspired by ChatGPT. Built using **HTML**, **CSS**, **JavaScript**, **Node.js**, **Express.js**, **Socket.io**, and the **Gemini AI API**, it delivers a seamless and interactive experience for users to communicate with an AI assistant.  
+A real-time AI-powered chat application built with  **HTML**, **CSS**, **JavaScript**, **Node.js**, **Express.js**, **Socket.io**, **OpenAI**, and the **Gemini AI API**, it delivers a seamless and interactive experience for users to communicate with an AI assistant.  
 
 
 ---
 
 ## Features 🌟  
-- **Interactive UI**: User-friendly design for a smooth chat experience.  
-- **Responsive Design**: Adapts to various screen sizes, ensuring usability across devices.  
-- **Light & Dark Modes**: Easily switch between modes for a personalized experience.  
-- **Real-Time AI Chat**: Engage in meaningful, real-time conversations powered by AI.  
+- **Interactive UI:** Intuitive design for smooth and engaging user experience.
+- **Responsiveness:** Fully responsive and optimized for mobile screens to ensure seamless use across all devices.
+- **Light/Dark Mode:** Switch themes based on user preference.
+- **Live Chat with AI:** Real-time conversation powered by AI models.
+- **Dual AI Support:** Access OpenAI and Gemini AI models with a single click for versatile chat experiences.
+- **User Authentication:** Register and log in to access personalized chat history.
+- **Chat History Management:** Store and view past conversations for each user. 
 
 ---
 
@@ -17,7 +20,7 @@ AI Chat is a real-time chat application inspired by ChatGPT. Built using **HTML*
 - **Frontend**: HTML, CSS, JavaScript  
 - **Backend**: Node.js, Express.js  
 - **Real-Time Communication**: Socket.io  
-- **AI API**: Gemini AI API  
+- **AI API**: Gemini AI API and OpenAI API
 
 
 ---
@@ -25,15 +28,25 @@ AI Chat is a real-time chat application inspired by ChatGPT. Built using **HTML*
 ## Screenshots
 
 
-   ![](https://github.com/vaibhav-katkar-dev/AI-CHAT/blob/main/public/2.PNG)
+   ![](https://github.com/vaibhav-katkar-dev/AI-CHAT/blob/main/public/images/10.PNG)
 
-   ![](https://github.com/vaibhav-katkar-dev/AI-CHAT/blob/main/public/3.PNG)
+   ![](https://github.com/vaibhav-katkar-dev/AI-CHAT/blob/main/public/images/11.PNG)
 
-   ![](https://github.com/vaibhav-katkar-dev/AI-CHAT/blob/main/public/1.PNG)
+   ![](https://github.com/vaibhav-katkar-dev/AI-CHAT/blob/main/public/images/12.PNG)
+
+   ![](https://github.com/vaibhav-katkar-dev/AI-CHAT/blob/main/public/images/13.PNG)
+
+   ![](https://github.com/vaibhav-katkar-dev/AI-CHAT/blob/main/public/images/14.PNG)
+
+   ![](https://github.com/vaibhav-katkar-dev/AI-CHAT/blob/main/public/images/15.PNG)
+
+   ![](https://github.com/vaibhav-katkar-dev/AI-CHAT/blob/main/public/images/16.PNG)
+
+   ![](https://github.com/vaibhav-katkar-dev/AI-CHAT/blob/main/public/images/17.PNG)
 
 
 
-   ![](https://github.com/vaibhav-katkar-dev/AI-CHAT/blob/main/public/4.PNG)
+
 
 
 ## 🚦 Getting Started
@@ -45,7 +58,7 @@ git clone https://github.com/vaibhav-katkar-dev/IAI-CHAT.git
 cd AI-CHAT
 # Make Sure Node JS Installed
 npm init -y
-npm install express socket.io @google/generative-ai
+npm install express socket.io @google/generative-ai openai
 node app.js
 ```
 

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/stylesheets/signup.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form class="body" method="post" action="/signup">
+        <h1>Ai-CHAT</h1>
+        <h3>Sign Up</h3>
+        <input type="text" name="email" class="ip" placeholder="Email" required>
+        <input type="text" name="fname" class="ip3" placeholder="First Name" required>
+        <input type="text" name="lname" class="ip4" placeholder="Last Name" required>
+        <input type="password" name="password" class="ip ip2" placeholder="Password" required>
+        <!-- <input type="button" value="Submit" class="btn"> -->
+        <button  class="btn">Submit</button>
+        <a href="/signin" class="signin">Login</a>
+
+    </form>
+   
+
+    <script src="socket.io/socket.io.js"></script>
+    <script>
+// socket=io();
+
+        let ip=document.querySelector(".ip");
+        let ip2=document.querySelector(".ip2");
+        let ip3=document.querySelector(".ip3");
+        let ip4=document.querySelector(".ip4");
+        let body=document.querySelector(".body");
+        let input=document.querySelector("input");
+        let btn=document.querySelector(".btn");
+
+        // input.style.color="green";
+    //     ip2.addEventListener("input",(i)=>{
+            
+    //    console.log(i);
+    //     // (ip2.value  >8) ?console.log("green") : console.log("red");
+
+    //     })
+        const deviceType = navigator.userAgent.includes("Mobi");
+    
+    if(deviceType==true){
+        ip.style.width="300px";
+        ip2.style.width="300px";
+        ip3.style.width="300px";
+        ip4.style.width="300px";
+        body.style.margin="0px";
+        body.style.width="90vw";
+        body.style.height="90vh";
+    
+        body.style.borderRadius="0px";
+
+
+    }
+    // let email=ip.data;
+    // let password=ip2.value;
+    // let firstName=ip3.value;
+    // let lastName=ip4.value;
+    // let data={email,password,firstName,lastName};
+
+    // btn.addEventListener("click",()=>{
+    //     console.log(data);
+    // })
+    
+    // socket.emit('signup',data);
+    </script>
+    
+</body>
+</html>
