@@ -58,7 +58,7 @@ git clone https://github.com/vaibhav-katkar-dev/IAI-CHAT.git
 cd AI-CHAT
 # Make Sure Node JS Installed
 npm init -y
-npm install express socket.io @google/generative-ai openai
+npm install express socket.io @google/generative-ai openai mongoose
 node app.js
 ```
 

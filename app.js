@@ -143,7 +143,7 @@ io.on('connection', (socket)=>{
 
         async function geminiAI() {
           
-        const genAI = new GoogleGenerativeAI("ENTER HEAR API KEY OF GEMINI AI");
+        const genAI = new GoogleGenerativeAI("ENTER Gemini AI API KEY");
         const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
     
         const prompt = `${p} tell like freind and always add Title in first Line`;
@@ -183,7 +183,7 @@ socket.emit('res',resAndTitle);
        
 
 const openai = new OpenAI({
-  apiKey: "ENTER OPEN AI API KEY",
+  apiKey: "ENTER Open AI API KEY",
 });
 
 
