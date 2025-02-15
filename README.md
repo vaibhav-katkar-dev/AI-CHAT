@@ -1,6 +1,6 @@
 # AI Chat 🤖💬  
 
-A real-time AI-powered chat application built with  **HTML**, **CSS**, **JavaScript**, **Node.js**, **Express.js**, **Socket.io**, **OpenAI**, and the **Gemini AI API**, it delivers a seamless and interactive experience for users to communicate with an AI assistant.  
+A real-time AI-powered chat application built with  **HTML**, **CSS**, **JavaScript**, **Node.js**, **Express.js**, **Socket.io**, **MongoDB**, **OpenAI**, and the **Gemini AI API**, it delivers a seamless and interactive experience for users to communicate with an AI assistant.  
 
 
 ---
