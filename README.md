@@ -54,7 +54,7 @@ A real-time AI-powered chat application built with  **HTML**, **CSS**, **JavaScr
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/vaibhav-katkar-dev/IAI-CHAT.git
+git clone https://github.com/vaibhav-katkar-dev/AI-CHAT.git
 cd AI-CHAT
 # Make Sure Node JS Installed
 npm init -y
